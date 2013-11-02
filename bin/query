@@ -10,10 +10,10 @@ case $TYPE in
         echo 'ubuntu/12.10';;
     secrets)
         echo 'MYSQL_PASSWORD';;
+    ports)
+        echo '3306';;
     env)
-        echo 'MYSQL_PORT=3306'
         echo "MYSQL_USER=$SERVICE_DB_USER"
         echo "MYSQL_DATABASE=$SERVICE_DB_NAME"
-        echo 'MYSQL_HOST=%IP'
         ;;
 esac
